@@ -1,0 +1,26 @@
+<view>
+    <view class="top">
+        <p class="{{selected==0?'selected':''}}" bindtap='onTabSelect' data-index="0">封面</p>
+        <p class="{{selected==1?'selected':''}}" bindtap='onTabSelect' data-index="1">图集</p>
+    </view>
+
+    <!-- 图集部分 -->
+    <view class="imageList" wx:if="{{selected==1}}">
+        <button class="copy" bindtap="copyUrl">复制图集链接</button>
+        <button class="downLoad" bindtap="downloadImageList" type="primary">下载图集</button>
+
+        <view class="box">
+            <view wx:for="{{imageList}}" wx:key="index">
+                <image src="{{item}}" mode="widthFix" data-index="{{index}}" bindtap="previewImage" />
+            </view>
+        </view>
+    </view>
+
+    <!-- 封面部分 -->
+    <view class="cover" wx:if="{{selected==0}}">
+        <image src="{{imageList[0]}}" mode="aspectFit" bindtap="previewCover" />
+        <button class="downloadImage" bindtap="downloadImage" type="primary">保存图片</button>
+    </view>
+
+
+</view>

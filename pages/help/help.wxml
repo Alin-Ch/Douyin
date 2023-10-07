@@ -1,0 +1,12 @@
+<view class="top">
+    <p class="{{selected==0?'selected':''}}" bindtap='onTabSelect' data-index="0">去水印</p>
+    <p class="{{selected==1?'selected':''}}" bindtap='onTabSelect' data-index="1">证件照</p>
+</view>
+
+<view class="douyin" wx:if="{{selected==0}}">
+    <text>使用步骤：</text>
+    <text>1.复制抖音分享的链接---></text>
+    <text> 2.粘贴---></text>
+    <text>3.点击去水印---></text>
+    <text>4.去水印成功，可以观看或者下载</text>
+</view>

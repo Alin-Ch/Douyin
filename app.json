@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/my",
+    "pages/video/video",
+    "pages/imageList/imageList",
+    "pages/help/help",
+    "pages/parseLog/parseLog",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "桂工阿林",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#5477ff",
+    "list": [
+        {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "images/home-noselect.png",
+            "selectedIconPath": "images/home-select.png"
+        },
+        {
+            "pagePath": "pages/my/my",
+            "text": "我的",
+            "iconPath": "images/my-noselect.png",
+            "selectedIconPath": "images/my-select.png"
+        }
+    ]
+},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

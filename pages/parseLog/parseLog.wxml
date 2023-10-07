@@ -1,0 +1,8 @@
+<!-- 页面结构部分 -->
+<view class="top">
+    <text>解析记录</text>
+</view>
+
+<view wx:for="{{parseLog}}" wx:key="index" class="parseLog">
+    <rich-text data-index="{{index}}" bindtap="parseVideo">{{item}}</rich-text>
+</view>

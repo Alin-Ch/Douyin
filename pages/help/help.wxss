@@ -1,0 +1,34 @@
+/* 顶部部分 */
+.top {
+    width: 100%;
+    height: 90rpx;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.top p {
+    display: inline-block;
+    width: 120rpx;
+    line-height: 90rpx;
+    text-align: center;
+    margin: 0 10rpx;
+}
+
+.top p.selected {
+    border-bottom: 2px solid blue;
+}
+
+.douyin {
+    font-size: large;
+    margin-top: 30rpx;
+}
+
+.douyin_help {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.douyin_help image {
+    margin-top: 50rpx;
+}

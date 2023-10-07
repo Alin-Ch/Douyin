@@ -1,0 +1,55 @@
+<!-- 用户信息 -->
+<!-- <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+        <view class="userinfo-avatar" bindtap="bindViewTap">
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+        <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block> -->
+<!-- 成功获取用户头像和昵称 -->
+<!-- <block wx:else>
+        <view class="showInfo">
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+    </block>
+</view> -->
+
+<view class="nav">
+  <view class="userInfo" wx:if="{{hasUserInfo}}">
+    <image src="{{userInfo.avatarUrl}}" mode="aspectFit" />
+    <p>{{userInfo.nickName}}</p>
+  </view>
+  <p class="login" wx:if="{{!hasUserInfo}}" bindtap="getUserProfile">登录</p>
+</view>
+
+
+<!-- 其它 -->
+<view class="others">
+  <!-- 清除缓存 -->
+  <label bindtap="clearCache">
+    <view class="others1" style="border-top: 1px solid #aaa;">
+      <image src="../../images/clearCache.png" mode="" />
+      <text class="clearCache">清除缓存</text>
+    </view>
+  </label>
+  <!-- 使用帮助 -->
+  <label bindtap="help">
+    <view class="others1">
+      <image src="../../images/help.png" mode="" />
+      <text class="clearCache">使用帮助</text>
+    </view>
+  </label>
+  <!-- 关于我们 -->
+  <label bindtap="aboutUs">
+    <view class="others1">
+      <image src="../../images/aboutUs.png" mode="" />
+      <text class="clearCache">关于我们</text>
+    </view>
+  </label>
+</view>

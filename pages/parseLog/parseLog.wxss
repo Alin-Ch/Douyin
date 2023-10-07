@@ -1,0 +1,15 @@
+.top {
+    margin-top: 20rpx;
+    text-align: center;
+    font-size: medium;
+    border-bottom: 1rpx solid #666;
+    color: #333;
+}
+.parseLog {
+    height: 50rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 30rpx;
+    margin: 25rpx;
+    color: #666;
+}

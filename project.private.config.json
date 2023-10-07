@@ -1,0 +1,49 @@
+{
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+    "projectname": "5.2%20%E5%8E%BB%E6%B0%B4%E5%8D%B0%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%88%E5%B7%B2%E5%AE%8C%E6%88%90%EF%BC%89",
+    "setting": {
+        "compileHotReLoad": false,
+        "urlCheck": false
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "",
+                    "pathName": "pages/video/video",
+                    "query": "videoUrl=https%253A%252F%252Fv.douyin.com%252FDVyAs6w%252F",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/my/my",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/parseLog/parseLog",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/help/help",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/imageList/imageList",
+                    "query": "videoUrl=https%253A%252F%252Fv.douyin.com%252FUBurvJ6%252F",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

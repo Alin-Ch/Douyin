@@ -1,0 +1,40 @@
+<view class="top">
+    <p class="{{selected==0?'selected':''}}" bindtap='onTabSelect' data-index="0">视频去水印</p>
+    <p class="{{selected==1?'selected':''}}" bindtap='onTabSelect' data-index="1">图集去水印</p>
+</view>
+
+
+<view class="page-body">
+    <view class="watermark">
+        <text bindtap="pasteUrl" class="pasteUrl">粘贴链接</text>
+        <view class="watermark-input">
+            <input value="{{shareUrl}}" placeholder="请复制抖音分享链接，粘贴到这里" bindinput="onInputChange" clearable="{{clear}}" />
+            <image wx:if="{{clear}}" src="../../images/clear.png" bindtap="clearInput" />
+        </view>
+    </view>
+
+    <view wx:if="{{selected==1}}">
+        <view class="btn-area" id="buttonContainer">
+            <button bindtap="submit" class="parsing">
+                图集解析
+            </button>
+        </view>
+    </view>
+
+    <view wx:if="{{selected==0}}">
+        <view class="btn-area" id="buttonContainer">
+            <button bindtap="submit" class="parsing">
+                视频解析
+            </button>
+        </view>
+    </view>
+
+
+    <view style="font-size: 35rpx; margin-left: 75%; color: rgb(50, 119, 248);">
+        <text bindtap="goParse">解析记录</text>
+    </view>
+    <view class="txt.tips">
+        <text style="font-size: 20;">视频归属于平台以及作者，小程序不存储任何短视频与图片</text>
+        <text style="font-size: 20;">欢迎使用</text>
+    </view>
+</view>

@@ -1,0 +1,107 @@
+page {
+    background-color: #0000;
+    height: 80%;
+    font-size: 32rpx;
+    line-height: 1.6;
+}
+
+page.body {
+    height: 80%;
+    font-size: 32rpx;
+}
+
+.watermark {
+    position: relative;
+    background-color: #fff;
+    border-top-left-radius: 20rpx;
+    border-top-right-radius: 20rpx;
+    margin-top: 0%;
+    z-index: 9;
+}
+
+.watermark-input {
+    /*position: absolute;*/
+    margin-top: 5rpx;
+    left: 50%;
+    width: 664rpx;
+    height: 108rpx;
+    margin-left: 50rpx;
+    z-index: 9;
+    background-color: #fff;
+    box-shadow: 0 12rpx 28rpx rgba(153, 153, 153, 0.34);
+    border-radius: 16rpx;
+}
+
+.watermark-input input {
+    float: left;
+    width: 80%;
+    height: 100%;
+    font-size: 28rpx;
+    padding-left: 30rpx;
+}
+
+.parsing {
+    padding-top: 0%;
+    margin-top: 20rpx;
+    overflow: hidden;
+    display: block;
+    width: 664rpx;
+    height: 88rpx;
+    line-height: 88rpx;
+    color: #fff;
+    background-color: #337aff;
+    box-shadow: 0 14rpx 28rpx rgba(51, 122, 255, 0.3);
+}
+
+button {
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+    display: flex;
+}
+
+
+.txt.tips {
+    color: darkgrey;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* 粘贴链接的样式 */
+.pasteUrl {
+    margin-left: 80%;
+    display: flex;
+    margin-top: 50rpx;
+}
+
+/* 清除按钮的样式 */
+.watermark-input image {
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+}
+
+
+
+
+
+
+/* 顶部部分 */
+.top{
+    width: 100%;
+    height: 90rpx;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.top p{
+    display: inline-block;
+    width: 180rpx;
+    line-height: 90rpx;
+    text-align: center;
+    margin: 0 10rpx;
+}
+.top p.selected {
+    border-bottom: 2px solid blue;
+  }

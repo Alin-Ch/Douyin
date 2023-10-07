@@ -1,0 +1,72 @@
+
+.userinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #aaa;
+    padding: 20rpx;
+    border-bottom: 1px solid #aaa;
+}
+/* 用户头像 */
+.userinfo-avatar {
+    overflow: hidden;
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.nav{
+    margin-top: 20rpx;
+}
+.nav .login{
+    display: block;
+    width: 300rpx;
+    line-height: 100rpx;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 10rpx;
+    margin: 0 auto;
+}
+.userInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 45rpx;
+  font-weight: bold;
+}
+.userInfo image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin-left: 50rpx;
+}
+.userInfo p{
+  margin-left: 50rpx;
+}
+
+/* 其它 */
+.others{
+    width: 100%;
+    height: 370rpx;
+    position: absolute;
+    top: 260rpx;
+}
+.others1{
+    width: 100%;
+    height: 100rpx;
+    color: rgb(71, 71, 71);
+    display: flex;
+    align-items: center;
+}
+.others view:nth-child(n){
+    border-bottom: 1px solid #aaa;
+}
+.others1 image{
+    width: 80rpx;
+    height: 80rpx;
+    margin-left: 30rpx;
+}
+.others1 text{
+    margin-left: 30rpx;
+}

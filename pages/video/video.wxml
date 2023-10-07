@@ -1,0 +1,40 @@
+<view>
+    <view class="top">
+        <p class="{{selected==0?'selected':''}}" bindtap='onTabSelect' data-index="0">封面</p>
+        <p class="{{selected==1?'selected':''}}" bindtap='onTabSelect' data-index="1">视频</p>
+        <p class="{{selected==2?'selected':''}}" bindtap='onTabSelect' data-index="2">文案</p>
+    </view>
+
+    <!-- 视频部分 -->
+    <view class="video" wx:if="{{selected==1}}">
+        <video src="{{url}}" />
+        <button class="copy" bindtap="copyUrl">复制视频链接</button>
+        <button class="downLoad" bindtap="downloadVideo" type="primary">下载视频</button>
+    </view>
+    <view wx:if="{{isImage}}">
+        <view class="video" wx:if="{{selected==1}}">
+            <view wx:for="{{imageList}}" wx:key="index">
+                <image src="item" mode="widthFix" />
+            </view>
+            <button class="copy" bindtap="copyUrl">复制图集链接</button>
+            <button class="downLoad" bindtap="downloadVideo" type="primary">下载图集</button>
+        </view>
+    </view>
+
+    <!-- 封面部分 -->
+    <view class="cover" wx:if="{{selected==0}}">
+        <image src="{{cover}}" mode="aspectFit" bindtap="previewImage" />
+        <button class="downloadImage" bindtap="downloadImage" type="primary">保存图片</button>
+    </view>
+
+    <!-- 文案部分 -->
+    <view class="title" wx:if="{{selected==2}}">
+        <text style="user-select: text;" data-text="{{title}}"> {{title}}</text>
+        <button class="copyTitle" bindtap="onCopyTap" type="primary">复制文案</button>
+
+        <view class="music">
+            <audio id="myAudio" src="{{musicUrl}}" autoplay="{{false}}" controls loop="{{false}}"></audio>
+            <button bindtap="downloadMusic">下载</button>
+        </view>
+    </view>
+</view>

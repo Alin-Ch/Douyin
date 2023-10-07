@@ -1,0 +1,102 @@
+/* 顶部部分 */
+.top{
+    width: 100%;
+    height: 90rpx;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.top p{
+    display: inline-block;
+    width: 120rpx;
+    line-height: 90rpx;
+    text-align: center;
+    margin: 0 10rpx;
+}
+.top p.selected {
+    border-bottom: 2px solid blue;
+  }
+  
+/* 视频部分 */
+.video {
+    margin-top: 20rpx;
+    height: 650rpx;
+    text-align: center;
+    border-radius: 20rpx;
+}
+
+.video .copy {
+    display: inline-block;
+    width: 300rpx;
+    font-size: 32rpx;
+    font-weight: 500;
+    margin-right: 10rpx;
+}
+
+.video .downLoad {
+    display: inline-block;
+    width: 300rpx;
+    font-size: 32rpx;
+    font-weight: 500;
+    margin-left: 10rpx;
+    background-color: rgb(83, 155, 238);
+}
+.video .downLoad button{
+    margin-top: 30rpx;
+}
+
+
+
+/* 封面部分 */
+.cover{
+    width: 100%;
+    height: 800rpx;
+    text-align: center;
+    border-top: 1rpx solid #dfdfdf;
+}
+.cover image{
+    width: 600rpx;
+    height: 700rpx;
+    margin-top: 20rpx;
+}
+.cover .downloadImage{
+    display: inline-block;
+    width: 300rpx;
+    font-size: 32rpx;
+    font-weight: 500;
+    background-color: rgb(83, 155, 238);
+}
+
+
+/* 文案部分 */
+.title{
+    width: 100%;
+    height: 200rpx;
+    margin-top: 10rpx;
+    padding: 5rpx;
+    border-top: 1rpx solid #dfdfdf;
+}
+.title .copyTitle{
+    display: inline-block;
+    width: 260rpx;
+    font-size: 32rpx;
+    font-weight: 500;
+    background-color: rgb(83, 155, 238);
+    margin-left: 450rpx;
+    margin-top: 30rpx;
+}
+.title .music{
+    width: 100%;
+    height: 250rpx;
+    margin-top: 100rpx;
+}
+.title .music button{
+    width: 260rpx;
+    font-size: 32rpx;
+    font-weight: 500;
+    background-color: rgb(83, 155, 238);
+    margin-left: 450rpx;
+    color: #FFFFFF;
+}
+
+
+
