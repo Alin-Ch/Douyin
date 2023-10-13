@@ -14,8 +14,8 @@
 
 3.如果是本地运行，可在开发者工具中选择 不校验合法域名
 
- <img src="C:\Users\Alin\Desktop\xxx\douyin\images\step2.png" alt="step2" style="zoom: 33%;" />
+ <img src="images\step2.png" alt="step2" style="zoom: 33%;" />
 
 如果想要发布到体验版本，就需要在微信开放平台中将  https://tenapi.cn  添加进去
 
-<img src="C:\Users\Alin\Desktop\xxx\douyin\images\step1.png" alt="step1" style="zoom: 33%;" />
+<img src="images\step1.png" alt="step1" style="zoom: 33%;" />
